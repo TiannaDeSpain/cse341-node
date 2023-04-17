@@ -2,10 +2,10 @@
   "name": "lessononetiannadespain",
   "version": "1.0.0",
   "description": "Personal Assignment of Lesson One in Web Services",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
