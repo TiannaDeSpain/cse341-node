@@ -1,0 +1,22 @@
+{
+  "name": "lessononetiannadespain",
+  "version": "1.0.0",
+  "description": "Personal Assignment of Lesson One in Web Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TiannaDeSpain/cse341-node.git"
+  },
+  "author": "Tianna DeSpain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiannaDeSpain/cse341-node/issues"
+  },
+  "homepage": "https://github.com/TiannaDeSpain/cse341-node#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
