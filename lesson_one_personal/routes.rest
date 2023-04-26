@@ -58,7 +58,7 @@ PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a0
 Content-Type: application/json
 
 {
-    "firstName": "Marshall",
+    "firstName": "Jess",
     "lastName": "Lyman",
     "email": "oceanblues@gmail.com",
     "favoriteColor": "red",
@@ -66,4 +66,4 @@ Content-Type: application/json
 }
 
 ### Delete Contact 
-DELETE http://localhost:8080/contacts/6449a1c8c5d26b023aaac022 HTTP/1.1
+DELETE https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a040d68752466c6 HTTP/1.1
