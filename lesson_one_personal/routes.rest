@@ -32,6 +32,8 @@ Content-Type: application/json
 ### Delete Contact 
 DELETE http://localhost:8080/contacts/6449a1e227b09ec39a9e12b4 HTTP/1.1
 
+
+
 // PRODUCTION Deploy  
 ### Get all the contacts
 GET https://lesson-one-personal-tianna-despain.onrender.com/contacts
@@ -40,7 +42,7 @@ GET https://lesson-one-personal-tianna-despain.onrender.com/contacts
 GET https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441cd347a040d68752466c4  
 
 ### Create Contact 
-PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts HTTP/1.1
+POST https://lesson-one-personal-tianna-despain.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
 {
@@ -64,4 +66,4 @@ Content-Type: application/json
 }
 
 ### Delete Contact 
-DELETE http://localhost:8080/contacts/6441ce337a040d68752466c6 HTTP/1.1
+DELETE http://localhost:8080/contacts/6449a1c8c5d26b023aaac022 HTTP/1.1
