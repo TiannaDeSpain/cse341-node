@@ -1,8 +1,7 @@
-
-const express = require("express");
+const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-const db = require("./src/config/mongodb");
+const db = require('./src/config/mongodb');
 const bodyParser = require('body-parser');
 
 app
@@ -13,7 +12,7 @@ app
   })
   .use('/', require('./src/routes'));
 
-db.initDb((err, db) => {
+db.initDb((err) => {
   if (err) {
     console.log(err);
   } else {

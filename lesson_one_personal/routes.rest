@@ -1,9 +1,67 @@
-// LOCALHOST ### GET http://localhost:8080/contacts 
-//           ### GET http://localhost:8080/contacts/6441ce097a040d68752466c5 
-//           ### GET http://localhost:8080/contacts/6441cd347a040d68752466c4 
-//           ### GET http://localhost:8080/contacts/6441ce337a040d68752466c6
+// LOCALHOST 
+### Get all the contacts
+GET http://localhost:8080/contacts 
 
-// PRODUCTION Deploy ### GET https://lesson-one-personal-tianna-despain.onrender.com/contacts
-//           ### GET https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441cd347a040d68752466c4  
-//           ### GET https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce097a040d68752466c5 
-//           ### GET https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a040d68752466c6
+### GET contact by id
+GET http://localhost:8080/contacts/6441ce097a040d68752466c5 
+
+### Create Contact 
+POST http://localhost:8080/contacts/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Hannah",
+    "lastName": "Smith",
+    "email": "hannahloveskits@gmail.com",
+    "favoriteColor": "maroon",
+    "birthday": "03-06-2006"
+}
+
+### Put Contact 
+PUT http://localhost:8080/contacts/6449a395172b43a6a165a321 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jess",
+    "lastName": "Fan",
+    "email": "ballplayer@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "10-28-2002"
+}
+
+### Delete Contact 
+DELETE http://localhost:8080/contacts/6449a1e227b09ec39a9e12b4 HTTP/1.1
+
+// PRODUCTION Deploy  
+### Get all the contacts
+GET https://lesson-one-personal-tianna-despain.onrender.com/contacts
+
+### GET contact by id
+GET https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441cd347a040d68752466c4  
+
+### Create Contact 
+PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Timmothy",
+    "lastName": "Barnes",
+    "email": "mr_tim@outlook.com",
+    "favoriteColor": "lilac",
+    "birthday": "05-10-1963"
+}
+
+### Put Contact 
+PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a040d68752466c6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Marshall",
+    "lastName": "Lyman",
+    "email": "oceanblues@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "12-25-1984"
+}
+
+### Delete Contact 
+DELETE http://localhost:8080/contacts/6441ce337a040d68752466c6 HTTP/1.1
