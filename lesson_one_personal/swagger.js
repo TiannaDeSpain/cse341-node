@@ -6,7 +6,7 @@ const doc = {
     description: 'Temple API'
   },
   host: 'lesson-one-personal-tianna-despain.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
