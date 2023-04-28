@@ -54,16 +54,16 @@ Content-Type: application/json
 }
 
 ### Put Contact 
-PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a040d68752466c6 HTTP/1.1
+PUT https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce097a040d68752466c5 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Jess",
-    "lastName": "Lyman",
-    "email": "oceanblues@gmail.com",
-    "favoriteColor": "red",
-    "birthday": "12-25-1984"
+    "firstName": "Darla",
+    "lastName": "Ward",
+    "email": "dogsrock@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "07-30-1990"
 }
 
 ### Delete Contact 
-DELETE https://lesson-one-personal-tianna-despain.onrender.com/contacts/6441ce337a040d68752466c6 HTTP/1.1
+DELETE https://lesson-one-personal-tianna-despain.onrender.com/contacts/6449b0855b396cc6eed96d65 HTTP/1.1
