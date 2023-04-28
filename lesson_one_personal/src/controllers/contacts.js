@@ -91,7 +91,28 @@ const updateContact = async (request, response) => {
         response.status(500).json(res.error || 'Error occurred while updating your contact.');
       }
     } catch {
-      response.status(500).json('Error occurred while updating your contact.');
+      try {
+        const contact = {
+          firstName: request.body.firstName,
+          lastName: request.body.lastName,
+          email: request.body.email,
+          favoriteColor: request.body.favoriteColor,
+          birthday: request.body.birthday
+        };
+        const res = await mongodb
+          .getDb()
+          .db('CSE341')
+          .collection('contacts')
+          .replaceOne({ email: request.body.email }, contact);
+        console.log(res);
+        if (res.modifiedCount > 0) {
+          response.status(204).send();
+        } else {
+          response.status(500).json(res.error || 'Error occurred while updating your contact.');
+        }
+      } catch {
+        response.status(500).json('Error occurred while updating your contact.');
+      }
     }
   }
 };
